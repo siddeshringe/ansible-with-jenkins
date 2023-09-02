@@ -5,14 +5,14 @@
   - name: "ensure Amit user exists"
     user:
       name: amit
-      state: present
+      state: absent
   - name: "ensure Alex user exists"
     user:
       name: alex
-      state: present
+      state: absent
   - name: "Install Finger"
     apt:
         name: finger
-        state: present
+        state: absent
         update_cache: yes 
       
